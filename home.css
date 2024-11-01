@@ -1,0 +1,90 @@
+/* Main body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("dinning.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header styling */
+h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: green;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    color: white;
+}
+
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Navbar customization */
+.navbar-nav {
+
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px aliceblue;
+    text-shadow: 0.1 0.1 0.5 black;
+}
+
+/* Main content styling */
+.main-content h1 {
+    font-size: 50px;
+    color: green;
+}
+
+.main-content p {
+    font-size: 20px;
+}
+
+/* Categories section */
+.categories .box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.categories .box h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.categories .box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Button hover effects */
+.categories .box button:hover {
+    background-color: #45a049;
+    box-shadow: 10px 10px 10px blanchedalmond, 10px 10px 20px yellow;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FFEFBA, #FFFFFF);
+    background-image: url("Techfood.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    box-shadow: 10px 10px 10px blanchedalmond, 10px 10px 20px yellow;
+}
+
+/* Login Form Styling */
+.login-form {
+
+    padding: 20px;
+    max-width: 100%;
+    /* Allow full width in small screens */
+    width: 90%;
+    /* Take up most of the width on small screens */
+    /* Set max width for larger screens */
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #388E3C;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}

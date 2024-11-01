@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Homely Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2e1a47, #3c2960, #563d81);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(90deg, #9B51E0, #BB6BD9);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Allow wrapping for smaller screens */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #F0E68C;
+        }
+
+        .section {
+            padding: 30px 20px;
+            text-align: left;
+            flex: 1;
+            /* Allow section to grow and fill available space */
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #F0E68C;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.5rem;
+            color: #e0dfe6;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #9B51E0, #BB6BD9);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+                /* Adjust heading size on smaller screens */
+            }
+
+            nav ul li {
+                margin: 0 10px;
+                /* Adjust margin for smaller screens */
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+                /* Smaller link font size */
+            }
+
+            .section h2 {
+                font-size: 2rem;
+                /* Smaller heading size for section */
+            }
+
+            .section p {
+                font-size: 1.2rem;
+                /* Smaller paragraph font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+                /* Further reduce heading size on mobile */
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+                /* Further reduce section heading size */
+            }
+
+            .section p {
+                font-size: 1rem;
+                /* Further reduce paragraph font size */
+            }
+
+            nav ul {
+                flex-direction: column;
+                /* Stack links vertically */
+                margin: 10px 0;
+                /* Adjust margin */
+            }
+
+            nav ul li {
+                margin: 5px 0;
+                /* Adjust margin for vertical stacking */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Homely Food</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="address.html">Address</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Us</h2>
+        <p>At Homely Food, we believe in serving delicious, homemade meals that remind you of the comfort and warmth of
+            home. Our chefs prepare meals with the finest ingredients, carefully curated for taste and nutrition. We are
+            committed to bringing fresh, flavorful food to your table every day.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Homely Food. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

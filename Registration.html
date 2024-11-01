@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homely Food - Registration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* General body and background styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #FFEFBA, #FFFFFF);
+            padding: 20px;
+            background-image: url("Techfood.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: green;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        /* Navigation link styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+
+            transform: scale(1.05);
+            box-shadow: 10px 10px 10px blanchedalmond, 10px 10px 20px yellow;
+        }
+
+        /* Form container styling */
+        .registration-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .btn-custom {
+            background: radial-gradient(circle, #FFD700, Green);
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: radial-gradient(circle, #FFD700, rgb(9, 205, 9));
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: green;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Homely Food</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration-form container">
+        <h2>Register Here</h2>
+        <form action="Login.html" class="needs-validation" novalidate>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" required>
+                <div class="invalid-feedback">Please enter your date of birth.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                <div class="invalid-feedback">Please enter a password.</div>
+            </div>
+
+            <div class="form-group">
+                <label>Food Preference:</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="veg" name="foodtype" value="veg" required>
+                        <label class="form-check-label" for="veg">Veg</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="nonveg" name="foodtype" value="nonveg"
+                            required>
+                        <label class="form-check-label" for="nonveg">Non-Veg</label>
+                    </div>
+                </div>
+                <div class="invalid-feedback">Please select your food preference.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password"
+                    required>
+                <div class="invalid-feedback">Please confirm your password.</div>
+            </div>
+
+            <button type="submit" class="btn btn-custom btn-block">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Homely Food. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Form Validation Script -->
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+</body>
+
+</html>

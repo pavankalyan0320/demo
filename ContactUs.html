@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Footer</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2e1a47, #3c2960, #563d81);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #9B51E0, #BB6BD9);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            /* Push footer to the bottom */
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            /* Default font size for the heading */
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+            margin: 15px 0;
+            /* Margin for spacing */
+        }
+
+        footer ul li {
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: #F0E68C;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        footer ul li a:hover {
+            color: #FFE680;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Home Button */
+        .home-button {
+            margin-top: 20px;
+        }
+
+        .home-button a {
+            background-color: #F0E68C;
+            color: #4b2e83;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button a:hover {
+            background-color: #FFE680;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            footer h2 {
+                font-size: 1.8rem;
+                /* Smaller heading size on tablets */
+            }
+
+            footer ul li {
+                margin: 0 10px;
+                /* Adjust margin for smaller screens */
+            }
+
+            footer ul li a {
+                font-size: 1.2rem;
+                /* Smaller link font size */
+            }
+
+            .contact-info {
+                font-size: 1rem;
+                /* Smaller contact info font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer h2 {
+                font-size: 1.5rem;
+                /* Further reduce heading size on mobile */
+            }
+
+            footer ul {
+                flex-direction: column;
+                /* Stack links vertically */
+                margin: 10px 0;
+                /* Adjust margin */
+            }
+
+            footer ul li {
+                margin: 5px 0;
+                /* Adjust margin for vertical stacking */
+            }
+
+            footer ul li a {
+                font-size: 1rem;
+                /* Smaller link font size */
+            }
+
+            .contact-info {
+                font-size: 0.9rem;
+                /* Smaller contact info font size */
+            }
+
+            .home-button a {
+                padding: 8px 16px;
+                /* Adjust padding for smaller buttons */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Footer with Social Media Links, Phone Number, and Home Button -->
+    <footer>
+        <h2>Connect Homely Food</h2>
+        <ul>
+            <li><a href="mailto:support@homelyfood.com">Mail</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">X</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        </ul>
+        <div class="contact-info">
+            <p>Phone: +1-234-567-890</p>
+        </div>
+        <div class="home-button">
+            <a href="Home.html">Home</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

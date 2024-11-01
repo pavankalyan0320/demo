@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homely Food - Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100"> <!-- Flexbox utility classes for sticky footer -->
+
+    <!-- Header -->
+    <header class="bg-success text-white text-center py-4">
+        <h1>Homely Food</h1>
+        <hr class="bg-light">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-light" href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="ContactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form Section -->
+    <main class="flex-grow-1"> <!-- Main content wrapper to push footer down -->
+        <section class="login-form my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-light p-4 rounded shadow-sm">
+                            <h2 class="text-center text-success mb-4">Login</h2>
+                            <form action="Home.html">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" class="form-control"
+                                        placeholder="Enter your password" required>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3 mt-auto">
+        <p>&copy; 2024 Homely Food. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
